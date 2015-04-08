@@ -11,6 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150408211547) do
+
+  create_table "clients", force: :cascade do |t|
+    t.string   "clientname"
+    t.string   "addressline1"
+    t.string   "addressline2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.integer  "internalid"
+    t.decimal  "billingrate"
+    t.decimal  "monthlyretainer"
+    t.integer  "hourspermonth"
+    t.string   "invoicetype"
+    t.string   "primaryphone"
+    t.string   "status"
+    t.string   "contactname"
+    t.string   "contactemail"
+    t.string   "contactphone"
+    t.string   "clienttype"
+    t.datetime "clientsince"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
 end

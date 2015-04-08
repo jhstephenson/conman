@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  
+  resources :clients do
+    collection { post :import }
+  end
+
   root 'pages#home'
   
   # The priority is based upon order of creation: first created -> highest priority.

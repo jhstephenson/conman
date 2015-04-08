@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clientname: MyString
+  addressline1: MyString
+  addressline2: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  internalid: 1
+  billingrate: 9.99
+  monthlyretainer: 9.99
+  hourspermonth: 1
+  invoicetype: MyString
+  primaryphone: MyString
+  status: MyString
+  contactname: MyString
+  contactemail: MyString
+  contactphone: MyString
+  clienttype: MyString
+  clientsince: 2015-04-08 15:15:47
+
+two:
+  clientname: MyString
+  addressline1: MyString
+  addressline2: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  internalid: 1
+  billingrate: 9.99
+  monthlyretainer: 9.99
+  hourspermonth: 1
+  invoicetype: MyString
+  primaryphone: MyString
+  status: MyString
+  contactname: MyString
+  contactemail: MyString
+  contactphone: MyString
+  clienttype: MyString
+  clientsince: 2015-04-08 15:15:47

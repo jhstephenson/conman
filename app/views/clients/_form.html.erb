@@ -1,0 +1,89 @@
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :clientname %><br>
+    <%= f.text_field :clientname %>
+  </div>
+  <div class="field">
+    <%= f.label :addressline1 %><br>
+    <%= f.text_field :addressline1 %>
+  </div>
+  <div class="field">
+    <%= f.label :addressline2 %><br>
+    <%= f.text_field :addressline2 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br>
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :internalid %><br>
+    <%= f.number_field :internalid %>
+  </div>
+  <div class="field">
+    <%= f.label :billingrate %><br>
+    <%= f.text_field :billingrate %>
+  </div>
+  <div class="field">
+    <%= f.label :monthlyretainer %><br>
+    <%= f.text_field :monthlyretainer %>
+  </div>
+  <div class="field">
+    <%= f.label :hourspermonth %><br>
+    <%= f.number_field :hourspermonth %>
+  </div>
+  <div class="field">
+    <%= f.label :invoicetype %><br>
+    <%= f.text_field :invoicetype %>
+  </div>
+  <div class="field">
+    <%= f.label :primaryphone %><br>
+    <%= f.text_field :primaryphone %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :contactname %><br>
+    <%= f.text_field :contactname %>
+  </div>
+  <div class="field">
+    <%= f.label :contactemail %><br>
+    <%= f.text_field :contactemail %>
+  </div>
+  <div class="field">
+    <%= f.label :contactphone %><br>
+    <%= f.text_field :contactphone %>
+  </div>
+  <div class="field">
+    <%= f.label :clienttype %><br>
+    <%= f.text_field :clienttype %>
+  </div>
+  <div class="field">
+    <%= f.label :clientsince %><br>
+    <%= f.datetime_select :clientsince %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
